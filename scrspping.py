@@ -25,7 +25,7 @@ def handle_directory() -> str:
         os.makedirs(name_dir)
         return name_dir
     except:
-        print("An error has occurred in directory function.")
+        print("ocorreu um erro na fnção de diretorio.")
         
 def mount_table():
     '''
@@ -83,7 +83,7 @@ def export_to_excel(dataframe: pd.DataFrame):
         dataframe.to_excel(f"{dir}/coleta_bookstoscrape.xlsx")
         print("Exported!!!!")
     except:
-        print("An error occurred. Check if the folder already exist!")
+        print("Um erro ocorreu. Verifique se a pasta já existe!")
     
 def scrape_book_page(driver: webdriver.Chrome, link: str) -> pd.DataFrame:
     '''
